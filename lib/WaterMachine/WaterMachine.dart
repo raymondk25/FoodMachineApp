@@ -20,7 +20,9 @@ class _WaterMachineState extends State<WaterMachine> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             FlatButton(
-              onPressed: () => {},
+              onPressed: () => {
+                showAlertDialog(context)
+              },
               color: Colors.lightBlueAccent,
               padding: EdgeInsets.only(
                   left: 150, right: 150, top: 30, bottom: 30),
@@ -60,24 +62,35 @@ class _WaterMachineState extends State<WaterMachine> {
                 ],
               ),
             ),
-
-            Column(children: <Widget>[SizedBox(height: 20,)],),
-
-            FlatButton(
-              onPressed: () => {Navigator.push(context, MaterialPageRoute(builder: (context) => FoodMachine()))},
-              color: Colors.grey,
-              padding: EdgeInsets.only(
-                  left: 15, right: 15, top: 10, bottom: 10),
-              child: Column( // Replace with a Row for horizontal icon + text
-                children: <Widget>[
-                  Text("Back", style: TextStyle(fontSize: 15),
-                    textAlign: TextAlign.center,)
-                ],
-              ),
-            ),
           ],
         ),
       ),
     );
   }
+}
+
+showAlertDialog(BuildContext context) {
+
+  // set up the buttons
+  Widget settingButton = FlatButton(
+    child: Text("Go to Setting"),
+    onPressed:  () {Navigator.push(context, MaterialPageRoute(builder: (context) => Setting()));},
+  );
+
+  // set up the AlertDialog
+  AlertDialog alert = AlertDialog(
+    title: Text("Alert!!"),
+    content: Text("Default is not yet set."),
+    actions: [
+      settingButton,
+    ],
+  );
+
+  // show the dialog
+  showDialog(
+    context: context,
+    builder: (BuildContext context) {
+      return alert;
+    },
+  );
 }

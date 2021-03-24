@@ -48,7 +48,7 @@ class _SettingState extends State<Setting> {
               }),
           SizedBox(height: 20,),
           TextField(
-              controller: TextEditingController(text: "     Set Amount of Water"),
+              controller: TextEditingController(text: "     Set Amount of Water (per second)"),
               style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold)
           ),
           SizedBox(height: 10,),
@@ -91,7 +91,7 @@ class _SettingState extends State<Setting> {
               Transform.scale(
                 scale: 0.65,
                 child: LiteRollingSwitch(
-                  value: true,
+                  value: false,
                   textOn: 'ON',
                   textOff: 'OFF',
                   colorOn: Colors.greenAccent[700],
