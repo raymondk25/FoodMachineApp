@@ -51,9 +51,8 @@ class _FoodByDefaultState extends State<FoodByDefault> {
                           ),
                         ),
                     ),
-
                   ],
-              )
+              ),
           ),
         )
     );

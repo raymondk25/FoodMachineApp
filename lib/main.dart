@@ -16,7 +16,7 @@ class _MyAppState extends State<MyApp> {
     return new SplashScreen(
         seconds: 8,
         navigateAfterSeconds: new HomePage(),
-        title: new Text('Welcome to FoodMachine APP',
+        title: new Text('Welcome to FeedingMachine APP',
           style: new TextStyle(
               fontWeight: FontWeight.bold,
               fontSize: 20.0
@@ -25,7 +25,7 @@ class _MyAppState extends State<MyApp> {
         backgroundColor: Colors.white,
         styleTextUnderTheLoader: new TextStyle(),
         photoSize: 100.0,
-        onClick: ()=>print("Flutter Egypt"),
+        onClick: ()=>print("Loading....."),
         loaderColor: Colors.red
     );
   }

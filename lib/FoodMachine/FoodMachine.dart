@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:zhuanti_app/FoodMachine/FoodByDefault.dart';
+import 'package:zhuanti_app/FoodMachine/Setting.dart';
 import 'package:zhuanti_app/HomePage.dart';
-import 'file:///C:/Users/Raymond/AndroidStudioProjects/zhuanti_app/lib/Setting.dart';
-import 'package:zhuanti_app/main.dart';
 
 class FoodMachine extends StatefulWidget {
   @override
@@ -23,7 +21,7 @@ class _FoodMachineState extends State<FoodMachine> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             FlatButton(
-              onPressed: () => {Navigator.push(context, MaterialPageRoute(builder: (context) => FoodByDefault()))},
+              onPressed: () => {},
               color: Colors.redAccent,
               padding: EdgeInsets.only(
                   left: 150, right: 150, top: 30, bottom: 30),

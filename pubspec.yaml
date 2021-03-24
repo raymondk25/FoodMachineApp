@@ -32,6 +32,7 @@ dependencies:
   animated_splash_screen: ^1.0.1
   flutter_cupertino_date_picker: ^1.0.26+2
   splashscreen: ^1.2.0
+  lite_rolling_switch: ^0.1.1
 
 dev_dependencies:
   flutter_test:

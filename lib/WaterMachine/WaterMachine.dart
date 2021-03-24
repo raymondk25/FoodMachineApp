@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:zhuanti_app/FoodMachine/FoodMachine.dart';
-import 'package:zhuanti_app/WaterMachine/WaterByDefault.dart';
-import 'file:///C:/Users/Raymond/AndroidStudioProjects/zhuanti_app/lib/Setting.dart';
-import 'package:zhuanti_app/main.dart';
+import 'package:zhuanti_app/WaterMachine/Setting.dart';
 
 class WaterMachine extends StatefulWidget {
   @override
@@ -22,7 +20,7 @@ class _WaterMachineState extends State<WaterMachine> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             FlatButton(
-              onPressed: () => {Navigator.push(context, MaterialPageRoute(builder: (context) => WaterByDefault()))},
+              onPressed: () => {},
               color: Colors.lightBlueAccent,
               padding: EdgeInsets.only(
                   left: 150, right: 150, top: 30, bottom: 30),
@@ -77,8 +75,6 @@ class _WaterMachineState extends State<WaterMachine> {
                 ],
               ),
             ),
-
-
           ],
         ),
       ),
